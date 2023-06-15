@@ -17,6 +17,7 @@ Context::~Context()
 	for (auto& pair : strategies_)
 	{
 		delete pair.second;
+		pair.second = nullptr;
 	}
 }
 
